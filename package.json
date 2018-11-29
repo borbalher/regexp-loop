@@ -1,6 +1,6 @@
 {
   "name": "regex-loop",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "It executes the sepecified regexp for the given text and executes the callback with the match. If a global regexp is used, it creates a loop.",
   "main": "index.js",
   "scripts": {

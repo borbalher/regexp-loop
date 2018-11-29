@@ -2,12 +2,38 @@
 
 > It executes the specified regexp for the given text and executes the callback with the match. If a global regexp is used, it creates a loop.
 
-## Parameters
- * {RegExp} regexp - Regular expression
- * {string} text - Text
- * {function} cb - Callback function
+## Install
+```sh
+$ npm install --save regexp-loop
+```
 
- ## Dev Dependencies
+And then in your code:
+```sh
+const regexLoop = require('regex-loop')
+```
+
+## Basic use
+The function expects three parameters:
+* Regular expression *{RegExp}*
+* Text *{String}*
+* Callback function, the match will be passed as parameter *{function}*
+```javascript
+// Saving all matches from text
+
+const
+matches   = [],
+regexLoop = require('regex-loop'),
+text      = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet.`,
+callback  = (match) => {
+  matches.push(match[0])
+}
+
+regexLoop(/ipsum/gi, text, callback)
+
+console.log(matches) // ["ipsum", "ipsum"]
+```
+
+## Dev Dependencies
 | Module | Description |
 | ------ | ------ |
 | [@babel/core](https://babeljs.io/) | Babel is a toolchain that is mainly used to convert ECMAScript 2015+ code into a backwards compatible version of JavaScript in current and older browsers or environments.  |

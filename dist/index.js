@@ -1,0 +1,1 @@
+"use strict";function regexLoop(a,b,c){for(var d;null!==(d=a.exec(b));)d.index===a.lastIndex&&a.lastIndex++,c(d)}module.exports=regexLoop;

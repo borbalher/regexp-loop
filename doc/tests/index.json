@@ -1,0 +1,97 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 2,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-11-29T09:12:55.142Z",
+    "end": "2018-11-29T09:12:55.153Z",
+    "duration": 11,
+    "testsRegistered": 2,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "e56c4c70-9795-4857-ab45-efb6f9877738",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "e207e5f7-1a05-4cfe-93c6-292e024d2a61",
+        "title": "RegexLoop tests",
+        "fullFile": "/mnt/c/Users/borbalher/Documents/GitHub/regexp-loop/src/tests.js",
+        "file": "/src/tests.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "should get 3 matches with the specified string",
+            "fullTitle": "RegexLoop tests should get 3 matches with the specified string",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const\n  regexp    = /donec/gi,\n  string    = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id varius nisi. Nunc congue bibendum leo condimentum egestas. Donec fringilla volutpat urna, ut facilisis tellus luctus sit amet. Donec bibendum eget dui sed eleifend. Ut venenatis aliquam enim, vel malesuada sapien aliquam eget. Suspendisse interdum euismod dolor, ac pretium diam vehicula eu. Maecenas condimentum orci sodales mi pharetra, sit amet sagittis leo imperdiet. Vestibulum et tempus dolor, quis vehicula nisi. Donec consequat velit cursus, vehicula leo blandit, sagittis massa. Suspendisse tristique dolor lectus, eu finibus ligula tempus vel. Vivamus blandit, purus et dictum tristique, lacus nibh suscipit lacus, vel egestas justo orci et ligula. Aliquam sapien velit, posuere placerat commodo ac, euismod vel quam.`,\n  matches   = [],\n  callback  = (match) =>\n  {\n    matches.push(match)\n  }\nregexLoop(regexp, string, callback)\nassert(matches.length === 3)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "63ac6183-8e7f-49c7-97ce-777682fe88bc",
+            "isHook": false,
+            "skipped": false
+          },
+          {
+            "title": "should get 4 matches with the specified string (zero-length matches)",
+            "fullTitle": "RegexLoop tests should get 4 matches with the specified string (zero-length matches)",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "const\n  regexp    = /\\b/gi,\n  string    = `1,2`,\n  matches   = [],\n  callback  = (match) =>\n  {\n    matches.push(match)\n  }\nregexLoop(regexp, string, callback)\nassert(matches.length === 4)",
+            "err": {},
+            "isRoot": false,
+            "uuid": "1d604f84-0c4f-428d-84d2-4611f2fdf514",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "63ac6183-8e7f-49c7-97ce-777682fe88bc",
+          "1d604f84-0c4f-428d-84d2-4611f2fdf514"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
